@@ -1,3 +1,200 @@
-<a href="minecraft://?addExternalServer=MyServer|147.185.221.229:41443">
-  กดเพื่อเข้า Minecraft
-</a>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamBlock Minecraft Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://www.minecraft.net//content/dam/minecraftnet/games/minecraft/key-art/MCM_HalloweenSale_Homepage_1080x1080.jpg') center/cover no-repeat;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      min-height: 100vh;
+      padding: 50px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* ปุ่มด้านบน */
+    .top-buttons {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      z-index: 100;
+    }
+
+    .join-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #3C8527, #6BC34A);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .join-btn:hover {
+      transform: scale(1.08);
+      background: linear-gradient(90deg, #6BC34A, #3C8527);
+    }
+
+    .logo {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 3rem;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+      margin: 100px 0 20px 0;
+    }
+
+    .slogan {
+      font-size: 1rem;
+      color: #ffcc00;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 5px black;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto 50px;
+    }
+
+    .feature {
+      background: rgba(0,0,0,0.5);
+      border: 2px solid #6a11cb;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      background: rgba(0,0,0,0.7);
+    }
+
+    .feature h3 {
+      color: #00FFAA;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .feature p {
+      font-size: 0.9rem;
+      color: #ddd;
+      line-height: 1.4;
+    }
+
+    .footer {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 2px solid rgba(255,255,255,0.2);
+      font-size: 0.9rem;
+    }
+
+    /* เอฟเฟกต์บล็อก Minecraft ลอยขึ้น */
+    .block {
+      position: absolute;
+      font-size: 18px;
+      animation: rise 3s linear forwards;
+      opacity: 0.9;
+    }
+
+    @keyframes rise {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-600px); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+
+    <!-- ปุ่มเริ่มเกม / Discord ด้านบน -->
+    <div class="top-buttons">
+      <a class="join-btn" href="minecraft://?addExternalServer=DreamBlock|147.185.221.229:41443">🎮 เริ่มเกม</a>
+      <a class="join-btn" href="https://discord.gg/2fzjfX8tQc" target="_blank">💬 Discord</a>
+    </div>
+
+    <div class="logo">🌌 DreamBlock 🌌</div>
+    <div class="slogan">สร้างโลกในฝันของคุณ ผจญภัย ไม่มีที่สิ้นสุด!</div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>💖 ระบบ Lifesteal</h3>
+        <p>ทุกครั้งที่สังหารศัตรู จะดูดหัวใจมาจากผู้ถูกสังหารและเพิ่มพลังให้ตัวเอง — ยิ่งฆ่ายิ่งแข็งแกร่ง!</p>
+      </div>
+
+      <div class="feature">
+        <h3>💰 ระบบเศรษฐกิจและตลาด</h3>
+        <p>ค้าขาย ทำงาน รับรางวัล และสร้างรายได้ในโลกสมจริง พร้อมตลาดกลางขับเคลื่อนด้วยผู้เล่นจริง</p>
+      </div>
+
+      <div class="feature">
+        <h3>⚔️ อาวุธตำนาน</h3>
+        <p>อาวุธระดับตำนานเฉพาะผู้กล้าหาญเท่านั้น!</p>
+      </div>
+
+      <div class="feature">
+        <h3>🧙‍♂️ NPC มีชีวิต</h3>
+        <p>สนทนา ทำเควส และเปิดร้านกับ NPC มีเอกลักษณ์เหมือนมีชีวิตจริง</p>
+      </div>
+
+      <div class="feature">
+        <h3>🏰 ป้องกันบ้าน & เขตปลอดภัย</h3>
+        <p>Grief Prevention ป้องกันการโจรกรรมและทำลายสิ่งปลูกสร้างได้อย่างชาญฉลาด</p>
+      </div>
+
+      <div class="feature">
+        <h3>🧠 AI Controller</h3>
+        <p>ศัตรูเรียนรู้และตอบสนองตามผู้เล่น — คุณจะเป็นเหยื่อหรือผู้ล่า?</p>
+      </div>
+
+      <div class="feature">
+        <h3>🌍 โลกแฟนตาซี</h3>
+        <p>สำรวจโครงสร้างสุ่ม เก็บรางวัลรายวัน และท่องโลกหลายมิติ</p>
+      </div>
+
+      <div class="feature">
+        <h3>💎 รางวัล & การผจญภัย</h3>
+        <p>ทำเควส ปลดล็อกของหายาก และสะสมไอเทมลับจากกิจกรรมรายสัปดาห์</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      IP: <b>147.185.221.229</b> | Port: <b>41443</b>
+    </div>
+  </div>
+
+  <script>
+    // เอฟเฟกต์บล็อก Minecraft ลอยขึ้น
+    setInterval(() => {
+      const block = document.createElement('div');
+      const blocks = ['🟦','🟩','🟪','🟨','🟥'];
+      block.textContent = blocks[Math.floor(Math.random() * blocks.length)];
+      block.className = 'block';
+      block.style.left = Math.random() * 100 + '%';
+      block.style.bottom = '0';
+      document.body.appendChild(block);
+      setTimeout(() => block.remove(), 3000);
+    }, 500);
+  </script>
+</body>
+</html>
